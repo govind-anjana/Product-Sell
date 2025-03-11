@@ -20,8 +20,6 @@ function Minor() {
         setText(items[selectedItem]);
     };
 
-    
-
     const AddCard = () => {
         let dis;
         if (!iname) return;
