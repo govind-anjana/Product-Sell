@@ -53,7 +53,7 @@ function Minor() {
             let newCard = prevCard.map(item => {
                 if (item.name === iname) {
                     updated = true;
-                    return { ...item, qn:eval(item.qn + +quantity) }; 
+                    return { ...item, qn:eval(item.qn + eval(quantity)) }; 
                 }
                 return item;
             });
@@ -124,7 +124,7 @@ function Minor() {
                                 <th>Rate</th>
                                 <th>Total</th>
                                 <th>Discount%</th>
-                                <th>Total-Discount</th>
+                                <th>Total Discount</th>
                                 <th>Net Amount</th>
 
                             </tr>
